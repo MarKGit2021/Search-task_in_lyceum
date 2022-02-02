@@ -49,7 +49,6 @@ if __name__ == '__main__':
         "l": "map",
         "pt": f"{toponym_longitude},{toponym_lattitude},pm2dgm1"
         }
-    print(f"{toponym_longitude},{toponym_lattitude},pm2rdg")
     map_api_server = "http://static-maps.yandex.ru/1.x/"
     response = requests.get(map_api_server, params=map_params)
     Image.open(BytesIO(
